@@ -123,7 +123,5 @@ Three.js disajikan langsung dari `node_modules/three` melalui endpoint `/vendor/
 ```bash
 npm test
 ```
-git init
-git add .
-git commit -m "feat: build Kineta Studio 3D footwear customizer and showcase"
-```
+
+---
