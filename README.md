@@ -123,16 +123,6 @@ Three.js disajikan langsung dari `node_modules/three` melalui endpoint `/vendor/
 ```bash
 npm test
 ```
-
----
-
-## Persiapan Push ke GitHub
-
-Jika folder proyek masih bernama `New folder` karena sedang terbuka di editor, tutup editor terlebih dahulu lalu ubah nama foldernya sebelum melakukan `git init` dan `git push`:
-
-```powershell
-Rename-Item -Path "d:\Github Project\New folder" -NewName "kineta-studio"
-cd "d:\Github Project\kineta-studio"
 git init
 git add .
 git commit -m "feat: build Kineta Studio 3D footwear customizer and showcase"
