@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="gelap">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kineta Studio | Kustomisasi 10 Siluet Sepatu 3D Interaktif</title>
+  <meta name="description" content="Studio sepatu 3D interaktif dengan 10 siluet klasik dan modern, bedah lapisan konstruksi, peracik warna real-time, dan pemesanan ukuran langsung." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Lilita+One&display=swap"
+    media="print"
+    onload="this.media='all'"
+  />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Lilita+One&display=swap" />
+  </noscript>
+  <link rel="stylesheet" href="/styles.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "/vendor/three/build/three.module.js",
+        "three/addons/": "/vendor/three/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Langsung ke konten utama</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#showroom" class="brand-mark" aria-label="Kineta Studio Beranda">
+        <span class="brand-badge">KINETA</span>
+        <span class="brand-sub">STUDIO 3D</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Navigasi utama">
+        <a href="#showroom" class="nav-link" data-i18n="navShowroom">Showroom</a>
+        <a href="#koleksi" class="nav-link" data-i18n="navCatalog">Koleksi (10)</a>
+        <a href="#customizer" class="nav-link" data-i18n="navCustomizer">Studio Warna</a>
+        <a href="#konstruksi" class="nav-link" data-i18n="navAnatomy">Konstruksi</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Pilihan bahasa">
+          <button type="button" class="lang-btn is-active" data-lang="id" aria-pressed="true">ID</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+
+        <button
+          type="button"
+          id="theme-toggle"
+          class="btn-icon"
+          aria-label="Ganti tema studio, tema aktif: Grafit"
+          title="Ganti tema: Grafit, Obsidian, Terang"
+        >
+          <svg class="icon-svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+          </svg>
+          <span class="btn-label-desktop" id="theme-label">Grafit</span>
+        </button>
+
+        <button
+          type="button"
+          id="open-bag-btn"
+          class="btn-bag"
+          aria-label="Buka tas belanja"
+        >
+          <svg class="icon-svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <path d="M16 10a4 4 0 0 1-8 0" />
+          </svg>
+          <span class="bag-word" data-i18n="bagWord">Tas</span>
+          <span class="bag-count" id="bag-count">0</span>
+        </button>
+
+        <button
+          type="button"
+          id="mobile-menu-btn"
+          class="btn-menu-mobile"
+          aria-expanded="false"
+          aria-controls="mobile-nav-panel"
+          data-i18n="menuBtn"
+        >
+          Menu
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-nav-panel" class="mobile-nav-panel" hidden>
+      <nav class="mobile-nav-list" aria-label="Navigasi seluler">
+        <a href="#showroom" class="mobile-nav-link" data-i18n="navShowroom">Showroom</a>
+        <a href="#koleksi" class="mobile-nav-link" data-i18n="navCatalog">Koleksi (10)</a>
+        <a href="#customizer" class="mobile-nav-link" data-i18n="navCustomizer">Studio Warna</a>
+        <a href="#konstruksi" class="mobile-nav-link" data-i18n="navAnatomy">Konstruksi</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- SECTION 1: SHOWROOM HERO -->
+    <section id="showroom" class="showroom-section">
+      <div class="container">
+        <div class="hero-card">
+          <div class="showroom-grid">
+            <div class="showroom-copy">
+              <div class="hero-kicker-row">
+                <span class="lime-tag" id="hero-category">Air Cushion</span>
+                <span class="mono-chip" id="hero-tag">Dual Air Unit</span>
+              </div>
+
+              <h1 id="hero-title">Kineta Air Pulse 90</h1>
+
+              <p class="hero-summary" id="hero-summary">
+                Siluet retro runner berwajah agresif dengan kapsul udara tumit terbuka dan panel mudguard berlapis.
+              </p>
+
+              <div class="spec-chips-row">
+                <span class="mono-chip" id="hero-chip-stack">STACK 36MM</span>
+                <span class="mono-chip" id="hero-chip-drop">DROP 10MM</span>
+                <span class="mono-chip">EU 39-45</span>
+              </div>
+
+              <div class="hero-price-row">
+                <div>
+                  <span class="meta-label" data-i18n="heroPriceLabel">Harga Studio</span>
+                  <p class="hero-price" id="hero-price">Rp 2.190.000</p>
+                </div>
+                <div>
+                  <span class="meta-label" data-i18n="heroColorwayLabel">Warna Aktif</span>
+                  <p class="hero-colorway-name" id="hero-colorway-name">Infrared 90</p>
+                </div>
+              </div>
+
+              <div class="quick-colorways" role="group" aria-label="Pilihan warna bawaan cepat">
+                <span class="meta-label" data-i18n="heroPresetLabel">Preset Warna Cepat</span>
+                <div id="hero-colorway-chips" class="chip-row"></div>
+              </div>
+
+              <div class="hero-cta-group">
+                <a href="#order-workbench" class="btn-primary" data-i18n="heroCtaOrder">Pilih Ukuran &amp; Pesan</a>
+                <a href="#customizer" class="btn-secondary" data-i18n="heroCtaCustomize">Racik Warna 3D</a>
+              </div>
+            </div>
+
+            <div class="stage-column">
+              <div class="stage-shell">
+                <div class="stage-overlay-top">
+                  <span class="stage-hint" data-i18n="stageHint">Seret 360°</span>
+                  <div class="stage-mode-actions">
+                    <button
+                      type="button"
+                      id="toggle-rotate-btn"
+                      class="stage-chip-btn"
+                      aria-pressed="true"
+                    >
+                      Jeda Putar
+                    </button>
+                    <button
+                      type="button"
+                      id="toggle-explode-btn"
+                      class="stage-chip-btn"
+                      aria-pressed="false"
+                    >
+                      Bedah Lapisan
+                    </button>
+                  </div>
+                </div>
+
+                <div
+                  id="shoe-canvas-wrap"
+                  class="canvas-wrap"
+                  tabindex="0"
+                  role="application"
+                  aria-label="Penampil sepatu 3D interaktif. Seret dengan mouse untuk memutar, scroll untuk memperbesar, atau gunakan tombol panah keyboard."
+                >
+                  <div id="webgl-fallback" class="webgl-fallback" hidden>
+                    <p id="webgl-fallback-msg"></p>
+                  </div>
+                </div>
+
+                <div class="stage-overlay-bottom" role="group" aria-label="Sudut kamera 3D">
+                  <button type="button" class="cam-btn is-active" data-cam="studio" data-i18n="camStudio">Studio 3/4</button>
+                  <button type="button" class="cam-btn" data-cam="profile" data-i18n="camProfile">Samping</button>
+                  <button type="button" class="cam-btn" data-cam="top" data-i18n="camTop">Atas</button>
+                  <button type="button" class="cam-btn" data-cam="heel" data-i18n="camHeel">Tumit</button>
+                  <button type="button" class="cam-btn" data-cam="sole" data-i18n="camSole">Tapak Sol</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lineup-strip" aria-label="Navigasi cepat 10 model sepatu">
+            <div class="lineup-meta">
+              <span class="lineup-code" id="lineup-counter">MODEL 01 / 10</span>
+              <span class="lineup-track-bar" aria-hidden="true">
+                <span class="lineup-track-fill" id="lineup-progress"></span>
+              </span>
+            </div>
+            <div class="lineup-controls">
+              <button type="button" id="prev-shoe-btn" class="btn-ghost-sm" data-i18n="prevShoe">Sebelumnya</button>
+              <button type="button" id="next-shoe-btn" class="btn-ghost-sm" data-i18n="nextShoe">Berikutnya</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: 10-SHOE CATALOG GRID & SIZE ORDER WORKBENCH -->
+    <section id="koleksi" class="catalog-section">
+      <div class="container">
+        <div class="section-header-inline">
+          <div>
+            <h2 class="heading-wipe" data-i18n="catalogHeading">10 Siluet Sepatu 3D</h2>
+            <p class="section-sub" data-i18n="catalogSub">Dari retro runner berjendela Air hingga court cupsole dan trail ACG. Klik kartu mana saja untuk memuat ke panggung 3D.</p>
+          </div>
+          <div class="filter-bar" role="group" aria-label="Filter kategori sepatu">
+            <button type="button" class="filter-btn is-active" data-category="all" data-i18n="filterAll">Semua (10)</button>
+            <button type="button" class="filter-btn" data-category="Air Cushion">Air Cushion</button>
+            <button type="button" class="filter-btn" data-category="Court &amp; Dunk">Court &amp; Dunk</button>
+            <button type="button" class="filter-btn" data-category="Running">Running</button>
+            <button type="button" class="filter-btn" data-category="Lifestyle Retro">Lifestyle Retro</button>
+            <button type="button" class="filter-btn" data-category="Trail ACG">Trail ACG</button>
+          </div>
+        </div>
+
+        <div id="catalog-loading" class="state-box" role="status" aria-busy="true">
+          <p data-i18n="catalogLoading">Memuat katalog sepatu dari server...</p>
+        </div>
+
+        <div id="catalog-error" class="state-box state-error" role="alert" hidden>
+          <p id="catalog-error-msg">Katalog sepatu gagal dimuat.</p>
+          <button type="button" id="retry-catalog-btn" class="btn-secondary-sm" data-i18n="catalogRetry">Coba Lagi</button>
+        </div>
+
+        <div id="catalog-empty" class="state-box" hidden>
+          <p data-i18n="catalogEmpty">Tidak ada model sepatu di kategori ini.</p>
+        </div>
+
+        <div id="catalog-workbench" class="catalog-stack" hidden>
+          <div id="shoe-selector-list" class="shoe-cards-grid" role="listbox" aria-label="Daftar 10 model sepatu"></div>
+
+          <div id="order-workbench" class="order-config-panel panel">
+            <div class="order-panel-top">
+              <div>
+                <span class="lime-tag" id="selected-cat-badge">Air Cushion</span>
+                <h3 id="selected-shoe-name">Kineta Air Pulse 90</h3>
+              </div>
+              <p class="selected-shoe-price" id="selected-shoe-price">Rp 2.190.000</p>
+            </div>
+
+            <div class="spec-strip">
+              <div class="spec-item">
+                <span class="meta-label" data-i18n="specHeelLabel">Tinggi Tumit</span>
+                <strong id="spec-heel">36 mm</strong>
+              </div>
+              <div class="spec-item">
+                <span class="meta-label" data-i18n="specDropLabel">Drop</span>
+                <strong id="spec-drop">10 mm</strong>
+              </div>
+              <div class="spec-item">
+                <span class="meta-label" data-i18n="specColorLabel">Warna Aktif</span>
+                <strong id="spec-colorway">Infrared 90</strong>
+              </div>
+            </div>
+
+            <div class="size-selector-wrap">
+              <div class="size-header">
+                <span class="meta-label" data-i18n="sizeSelectLabel">Pilih Ukuran (EU)</span>
+                <span id="size-stock-note" class="stock-note">Pilih ukuran untuk cek stok</span>
+              </div>
+              <div id="size-grid" class="size-grid" role="radiogroup" aria-label="Ukuran sepatu EU"></div>
+            </div>
+
+            <div class="add-bag-row">
+              <button type="button" id="add-to-bag-btn" class="btn-primary btn-full" disabled>
+                Pilih Ukuran Terlebih Dahulu
+              </button>
+            </div>
+            <p id="bag-feedback" class="form-feedback" role="status" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: STUDIO WARNA & RACIKAN TERSIMPAN -->
+    <section id="customizer" class="customizer-section">
+      <div class="container">
+        <div class="section-header-inline">
+          <div>
+            <h2 class="heading-wipe" data-i18n="customizerHeading">Studio Warna &amp; Material</h2>
+            <p class="section-sub" data-i18n="customizerSub">Ubah warna tiap bagian sepatu secara langsung di model 3D, lalu simpan racikanmu ke server.</p>
+          </div>
+          <button type="button" id="reset-colorway-btn" class="btn-ghost" data-i18n="resetColorBtn">Reset Warna Bawaan</button>
+        </div>
+
+        <div class="customizer-layout">
+          <div class="customizer-controls panel">
+            <div class="zone-tabs" role="tablist" aria-label="Pilih zona sepatu">
+              <button type="button" role="tab" class="zone-tab is-active" aria-selected="true" data-zone="upper" data-i18n-zone="upper">Upper</button>
+              <button type="button" role="tab" class="zone-tab" aria-selected="false" data-zone="overlay" data-i18n-zone="overlay">Overlay</button>
+              <button type="button" role="tab" class="zone-tab" aria-selected="false" data-zone="midsole" data-i18n-zone="midsole">Midsole</button>
+              <button type="button" role="tab" class="zone-tab" aria-selected="false" data-zone="outsole" data-i18n-zone="outsole">Outsole</button>
+              <button type="button" role="tab" class="zone-tab" aria-selected="false" data-zone="accent" data-i18n-zone="accent">Swoosh &amp; Aksen</button>
+              <button type="button" role="tab" class="zone-tab" aria-selected="false" data-zone="laces" data-i18n-zone="laces">Tali</button>
+            </div>
+
+            <div class="swatch-area">
+              <div class="swatch-header">
+                <span class="meta-label"><span data-i18n="paletteFor">Palet Studio untuk</span> <strong id="active-zone-label">Upper</strong></span>
+                <div class="custom-picker-wrap">
+                  <label for="zone-color-input" class="picker-label" data-i18n="hexCustom">Hex Kustom</label>
+                  <input type="color" id="zone-color-input" value="#ECEAE4" />
+                </div>
+              </div>
+              <div id="palette-swatches" class="palette-grid" role="group" aria-label="Pilihan warna studio"></div>
+            </div>
+
+            <div class="material-area">
+              <span class="meta-label" data-i18n="materialLabel">Tekstur Material Upper</span>
+              <div class="material-pills" role="group" aria-label="Pilih tekstur material upper">
+                <button type="button" class="mat-btn is-active" data-material="knit" data-i18n="matKnit">Engineered Knit</button>
+                <button type="button" class="mat-btn" data-material="leather" data-i18n="matLeather">Tumbled Leather</button>
+                <button type="button" class="mat-btn" data-material="suede" data-i18n="matSuede">Brushed Suede</button>
+              </div>
+            </div>
+
+            <form id="save-design-form" class="save-build-form" novalidate>
+              <label for="build-name-input" class="form-label" data-i18n="saveBuildLabel">Simpan Racikan ke Galeri Server</label>
+              <div class="save-input-row">
+                <input
+                  id="build-name-input"
+                  name="buildName"
+                  type="text"
+                  maxlength="48"
+                  placeholder="Contoh: Infrared Panda 85"
+                  required
+                />
+                <button type="submit" id="save-design-btn" class="btn-primary" data-i18n="saveBtn">Simpan</button>
+              </div>
+              <p id="save-design-feedback" class="form-feedback" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <div class="saved-builds-panel panel">
+            <div class="saved-header">
+              <h3 data-i18n="savedHeading">Racikan Tersimpan</h3>
+              <button type="button" id="refresh-designs-btn" class="btn-ghost-sm" data-i18n="refreshBtn">Muat Ulang</button>
+            </div>
+
+            <div id="designs-loading" class="state-box" role="status" aria-busy="true">
+              <p data-i18n="designsLoading">Memuat daftar racikan dari server...</p>
+            </div>
+
+            <div id="designs-error" class="state-box state-error" role="alert" hidden>
+              <p id="designs-error-msg">Gagal memuat racikan tersimpan.</p>
+              <button type="button" id="retry-designs-btn" class="btn-secondary-sm" data-i18n="catalogRetry">Coba Lagi</button>
+            </div>
+
+            <div id="designs-empty" class="state-box" hidden>
+              <p data-i18n="designsEmpty">Belum ada racikan tersimpan. Atur warna di panel sebelah lalu simpan kombinasi pertamamu.</p>
+            </div>
+
+            <ul id="designs-list" class="designs-list" hidden></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: BEDAH KONSTRUKSI -->
+    <section id="konstruksi" class="anatomy-section">
+      <div class="container">
+        <div class="anatomy-shell">
+          <h2 class="heading-wipe" data-i18n="anatomyHeading">Tiga Lapisan Konstruksi</h2>
+          <p class="section-sub" data-i18n="anatomySub">Sorot tiap lapisan langsung pada model 3D untuk membedah struktur material sepatu aktif.</p>
+
+          <div class="anatomy-rows">
+            <article class="anatomy-row">
+              <div class="anatomy-index">01</div>
+              <div class="anatomy-body">
+                <h3 data-i18n="layer1Title">Upper &amp; Kerangka Penopang</h3>
+                <p id="mat-desc-upper">Mesh breathable berbingkai panel kulit sintetis berjahit ganda</p>
+              </div>
+              <button type="button" class="btn-secondary inspect-layer-btn" data-layer="upper" data-i18n="inspectLayerBtn">
+                Sorot di 3D
+              </button>
+            </article>
+
+            <article class="anatomy-row">
+              <div class="anatomy-index">02</div>
+              <div class="anatomy-body">
+                <h3 data-i18n="layer2Title">Midsole &amp; Air Unit</h3>
+                <p id="mat-desc-midsole">Wedge busa PU tinggi dengan jendela Air Unit tumit transparan</p>
+              </div>
+              <button type="button" class="btn-secondary inspect-layer-btn" data-layer="midsole" data-i18n="inspectLayerBtn">
+                Sorot di 3D
+              </button>
+            </article>
+
+            <article class="anatomy-row">
+              <div class="anatomy-index">03</div>
+              <div class="anatomy-body">
+                <h3 data-i18n="layer3Title">Outsole &amp; Traksi</h3>
+                <p id="mat-desc-outsole">Karet waffle klasik berpola traksi multi-blok</p>
+              </div>
+              <button type="button" class="btn-secondary inspect-layer-btn" data-layer="outsole" data-i18n="inspectLayerBtn">
+                Sorot di 3D
+              </button>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-upper">
+        <div class="footer-brand">
+          <span class="brand-badge">KINETA</span>
+          <p data-i18n="footerTagline">Showroom 10 siluet sepatu 3D dan studio peracik warna berbasis Node.js dan Three.js.</p>
+        </div>
+        <nav class="footer-links" aria-label="Tautan footer">
+          <a href="#showroom" data-i18n="navShowroom">Showroom</a>
+          <a href="#koleksi" data-i18n="navCatalog">Koleksi (10)</a>
+          <a href="#customizer" data-i18n="navCustomizer">Studio Warna</a>
+          <a href="#konstruksi" data-i18n="navAnatomy">Konstruksi</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footerLab">Kineta Studio Footwear Lab</span>
+        <span data-i18n="footerStack">Node.js + Express + Three.js WebGL</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BAG & CHECKOUT MODAL DIALOG -->
+  <dialog id="bag-dialog" class="bag-dialog" aria-labelledby="bag-dialog-title">
+    <div class="dialog-header">
+      <h2 id="bag-dialog-title" data-i18n="bagTitle">Tas Belanja Studio</h2>
+      <button type="button" id="close-bag-btn" class="btn-icon" aria-label="Tutup tas belanja">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="dialog-body">
+      <div id="bag-empty-state" class="state-box">
+        <p data-i18n="bagEmpty">Tas belanja masih kosong. Pilih model dan ukuran di bagian Koleksi untuk mulai memesan.</p>
+        <a href="#koleksi" id="bag-go-catalog" class="btn-secondary-sm" data-i18n="bagSeeCatalog">Lihat Koleksi</a>
+      </div>
+
+      <ul id="bag-items-list" class="bag-items-list" hidden></ul>
+
+      <form id="checkout-form" class="checkout-form" hidden novalidate>
+        <div class="bag-summary-row">
+          <span data-i18n="bagTotalLabel">Total Pesanan</span>
+          <strong id="bag-total-price">Rp 0</strong>
+        </div>
+
+        <div class="form-field">
+          <label for="customer-name" data-i18n="custNameLabel">Nama Penerima</label>
+          <input id="customer-name" name="customerName" type="text" placeholder="Nama lengkap penerima" required />
+        </div>
+
+        <div class="form-field">
+          <label for="customer-email" data-i18n="custEmailLabel">Email Konfirmasi</label>
+          <input id="customer-email" name="customerEmail" type="email" placeholder="email@contoh.com" required />
+        </div>
+
+        <div class="form-field">
+          <label for="shipping-address" data-i18n="custAddressLabel">Alamat Pengiriman</label>
+          <textarea id="shipping-address" name="shippingAddress" rows="3" placeholder="Jalan, nomor rumah, kecamatan, kota, kode pos" required></textarea>
+        </div>
+
+        <p id="checkout-feedback" class="form-feedback" role="alert" aria-live="polite"></p>
+
+        <button type="submit" id="submit-order-btn" class="btn-primary btn-full" data-i18n="confirmOrderBtn">
+          Konfirmasi Pesanan
+        </button>
+      </form>
+
+      <div id="order-receipt" class="order-receipt" hidden>
+        <h3 data-i18n="receiptTitle">Pesanan Diterima</h3>
+        <p><span data-i18n="receiptCodeLabel">Kode pesanan kamu:</span> <strong id="receipt-order-id"></strong></p>
+        <p id="receipt-summary"></p>
+        <button type="button" id="receipt-done-btn" class="btn-secondary" data-i18n="receiptDoneBtn">Selesai</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

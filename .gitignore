@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Environment & Logs
+.env
+.env.*
+*.log
+npm-debug.log*
+
+# Temporary atomic write artifacts
+data/*.tmp
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,25 @@
+{
+  "name": "kineta-studio",
+  "version": "1.0.0",
+  "description": "Kineta Studio - Interactive 3D Sneaker Showcase and Customizer built with Node.js, Express, and Three.js",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test tests/api.test.js"
+  },
+  "keywords": [
+    "3d",
+    "sneaker",
+    "footwear",
+    "threejs",
+    "nodejs",
+    "express"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0",
+    "three": "^0.175.0"
+  }
+}

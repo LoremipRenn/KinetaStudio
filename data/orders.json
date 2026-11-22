@@ -1,0 +1,23 @@
+[
+  {
+    "orderId": "KNT-MWQPFAJ6-2529",
+    "customerName": "yayaya",
+    "customerEmail": "yayaya@gmail.com",
+    "shippingAddress": "jl yayayayaya",
+    "items": [
+      {
+        "shoeId": "court-force-1",
+        "shoeName": "Kineta Force 1 Low",
+        "sizeEu": 40,
+        "quantity": 1,
+        "unitPriceIdr": 1950000,
+        "lineTotalIdr": 1950000,
+        "colorwayName": "Triple Chalk",
+        "material": "leather"
+      }
+    ],
+    "totalIdr": 1950000,
+    "status": "confirmed",
+    "createdAt": "2026-11-21T17:51:09.330Z"
+  }
+]

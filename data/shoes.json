@@ -1,0 +1,902 @@
+[
+  {
+    "id": "air-pulse-90",
+    "name": "Kineta Air Pulse 90",
+    "category": "Air Cushion",
+    "tag": "Dual Air Unit",
+    "stageTone": "rose",
+    "priceIdr": 2190000,
+    "summary": "Siluet retro runner berwajah agresif dengan kapsul udara tumit terbuka dan panel mudguard berlapis.",
+    "architecture": {
+      "silhouette": "airmax",
+      "collarHeight": 0.8,
+      "soleThickness": 1.08,
+      "lugDepth": 0.032,
+      "heelStackMm": 36,
+      "dropMm": 10,
+      "upperDefaultMaterial": "knit",
+      "airUnitStyle": "heel",
+      "cupsole": false,
+      "swooshScale": 1,
+      "dubrae": false
+    },
+    "materials": {
+      "upper": "Mesh breathable berbingkai panel kulit sintetis berjahit ganda",
+      "midsole": "Wedge busa PU tinggi dengan jendela Air Unit tumit transparan",
+      "outsole": "Karet waffle klasik berpola traksi multi-blok"
+    },
+    "colorways": [
+      {
+        "id": "infrared-90",
+        "name": "Infrared 90",
+        "upper": "#ECEAE4",
+        "overlay": "#302F2D",
+        "midsole": "#F7F5F0",
+        "outsole": "#181816",
+        "accent": "#E63E26",
+        "laces": "#F7F5F0"
+      },
+      {
+        "id": "laser-blue",
+        "name": "Laser Cobalt",
+        "upper": "#EFECE6",
+        "overlay": "#222428",
+        "midsole": "#F8F7F4",
+        "outsole": "#161719",
+        "accent": "#2368D9",
+        "laces": "#EFECE6"
+      },
+      {
+        "id": "volt-slate",
+        "name": "Volt Slate",
+        "upper": "#3B3E3B",
+        "overlay": "#1D1F1D",
+        "midsole": "#E9ECE6",
+        "outsole": "#141514",
+        "accent": "#A6E22E",
+        "laces": "#1D1F1D"
+      }
+    ],
+    "sizes": [
+      {
+        "eu": 39,
+        "stock": 6
+      },
+      {
+        "eu": 40,
+        "stock": 9
+      },
+      {
+        "eu": 41,
+        "stock": 12
+      },
+      {
+        "eu": 42,
+        "stock": 8
+      },
+      {
+        "eu": 43,
+        "stock": 5
+      },
+      {
+        "eu": 44,
+        "stock": 4
+      },
+      {
+        "eu": 45,
+        "stock": 2
+      }
+    ]
+  },
+  {
+    "id": "dunk-low-studio",
+    "name": "Kineta Dunk Low 85",
+    "category": "Court & Dunk",
+    "tag": "Two-Tone Block",
+    "stageTone": "sky",
+    "priceIdr": 1850000,
+    "summary": "Sepatu basket low-top klasik dengan colorblocking dua warna tegas, toe box berlubang, dan cupsole datar.",
+    "architecture": {
+      "silhouette": "dunk_low",
+      "collarHeight": 0.82,
+      "soleThickness": 0.88,
+      "lugDepth": 0.022,
+      "heelStackMm": 26,
+      "dropMm": 4,
+      "upperDefaultMaterial": "leather",
+      "airUnitStyle": "none",
+      "cupsole": true,
+      "swooshScale": 1.12,
+      "dubrae": false
+    },
+    "materials": {
+      "upper": "Full-grain tumbled leather dua warna dengan perforasi kotak jari",
+      "midsole": "Cupsole karet jahitan keliling dengan bantalan EVA internal",
+      "outsole": "Lingkar pivot basket klasik berpola konsentris"
+    },
+    "colorways": [
+      {
+        "id": "panda-classic",
+        "name": "Panda Mono",
+        "upper": "#F4F2ED",
+        "overlay": "#181816",
+        "midsole": "#F6F5F0",
+        "outsole": "#181816",
+        "accent": "#181816",
+        "laces": "#181816"
+      },
+      {
+        "id": "kentucky-blue",
+        "name": "Varsity Royal",
+        "upper": "#F5F4F0",
+        "overlay": "#1F50A6",
+        "midsole": "#F7F6F2",
+        "outsole": "#1F50A6",
+        "accent": "#1F50A6",
+        "laces": "#1F50A6"
+      },
+      {
+        "id": "syracuse-orange",
+        "name": "Clay Orange",
+        "upper": "#F4F1EA",
+        "overlay": "#D64E1E",
+        "midsole": "#F7F5F0",
+        "outsole": "#D64E1E",
+        "accent": "#D64E1E",
+        "laces": "#D64E1E"
+      },
+      {
+        "id": "michigan-pine",
+        "name": "Forest Varsity",
+        "upper": "#F2F0EA",
+        "overlay": "#214933",
+        "midsole": "#F5F3EE",
+        "outsole": "#214933",
+        "accent": "#214933",
+        "laces": "#214933"
+      }
+    ],
+    "sizes": [
+      {
+        "eu": 39,
+        "stock": 8
+      },
+      {
+        "eu": 40,
+        "stock": 11
+      },
+      {
+        "eu": 41,
+        "stock": 14
+      },
+      {
+        "eu": 42,
+        "stock": 10
+      },
+      {
+        "eu": 43,
+        "stock": 7
+      },
+      {
+        "eu": 44,
+        "stock": 5
+      },
+      {
+        "eu": 45,
+        "stock": 3
+      }
+    ]
+  },
+  {
+    "id": "court-force-1",
+    "name": "Kineta Force 1 Low",
+    "category": "Court & Dunk",
+    "tag": "Cupsole Tebal",
+    "stageTone": "amber",
+    "priceIdr": 1950000,
+    "summary": "Ikon streetwear bertapak tebal dengan konstruksi kulit kokoh, dubrae tali metalik, dan siluet serba bersih.",
+    "architecture": {
+      "silhouette": "af1_low",
+      "collarHeight": 0.84,
+      "soleThickness": 1.08,
+      "lugDepth": 0.025,
+      "heelStackMm": 32,
+      "dropMm": 4,
+      "upperDefaultMaterial": "leather",
+      "airUnitStyle": "none",
+      "cupsole": true,
+      "swooshScale": 1.05,
+      "dubrae": true
+    },
+    "materials": {
+      "upper": "Kulit halus terstruktur dengan pelat dubrae logam pada pangkal tali",
+      "midsole": "Cupsole tebal penuh berisi kantung udara tersembunyi",
+      "outsole": "Karet non-marking berpola pivot tumit dan ujung kaki"
+    },
+    "colorways": [
+      {
+        "id": "triple-chalk",
+        "name": "Triple Chalk",
+        "upper": "#F5F4F0",
+        "overlay": "#ECEAE3",
+        "midsole": "#F6F5F1",
+        "outsole": "#E6E4DD",
+        "accent": "#C8C4BA",
+        "laces": "#F5F4F0"
+      },
+      {
+        "id": "linen-gum",
+        "name": "Linen & Gum",
+        "upper": "#F2EFE8",
+        "overlay": "#DFD6C5",
+        "midsole": "#F4F1EA",
+        "outsole": "#9E764E",
+        "accent": "#9E764E",
+        "laces": "#F2EFE8"
+      },
+      {
+        "id": "triple-obsidian",
+        "name": "Triple Obsidian",
+        "upper": "#222220",
+        "overlay": "#181816",
+        "midsole": "#1D1D1B",
+        "outsole": "#121210",
+        "accent": "#383834",
+        "laces": "#1A1A18"
+      }
+    ],
+    "sizes": [
+      {
+        "eu": 39,
+        "stock": 10
+      },
+      {
+        "eu": 40,
+        "stock": 11
+      },
+      {
+        "eu": 41,
+        "stock": 15
+      },
+      {
+        "eu": 42,
+        "stock": 12
+      },
+      {
+        "eu": 43,
+        "stock": 9
+      },
+      {
+        "eu": 44,
+        "stock": 6
+      },
+      {
+        "eu": 45,
+        "stock": 4
+      }
+    ]
+  },
+  {
+    "id": "sky-high-85",
+    "name": "Kineta Sky High 85",
+    "category": "Court & Dunk",
+    "tag": "High-Top 85",
+    "stageTone": "rose",
+    "priceIdr": 2490000,
+    "summary": "Kerangka high-top klasik 6 pasang lubang tali dengan sayap kerah bertumpuk dan cupsole lapangan berprofil tipis.",
+    "architecture": {
+      "silhouette": "jordan_high",
+      "collarHeight": 1.48,
+      "soleThickness": 0.9,
+      "lugDepth": 0.022,
+      "heelStackMm": 27,
+      "dropMm": 4,
+      "upperDefaultMaterial": "leather",
+      "airUnitStyle": "none",
+      "cupsole": true,
+      "swooshScale": 1.15,
+      "dubrae": false
+    },
+    "materials": {
+      "upper": "Kulit full-grain bertekstur dengan penyangga pergelangan tinggi",
+      "midsole": "Cupsole profil rendah dengan welt jahitan kontras",
+      "outsole": "Pola traksi melingkar untuk kontrol arah tajam"
+    },
+    "colorways": [
+      {
+        "id": "chicago-crimson",
+        "name": "Crimson 85",
+        "upper": "#F3F1EC",
+        "overlay": "#B82924",
+        "midsole": "#F4F1EA",
+        "outsole": "#B82924",
+        "accent": "#181816",
+        "laces": "#181816"
+      },
+      {
+        "id": "mocha-suede",
+        "name": "Mocha & Sail",
+        "upper": "#F0ECE2",
+        "overlay": "#5A4232",
+        "midsole": "#EDE6D6",
+        "outsole": "#1D1B19",
+        "accent": "#1D1B19",
+        "laces": "#F0ECE2"
+      },
+      {
+        "id": "university-sky",
+        "name": "Sky Court",
+        "upper": "#F4F3EE",
+        "overlay": "#4F87C6",
+        "midsole": "#F5F4F0",
+        "outsole": "#4F87C6",
+        "accent": "#191A1C",
+        "laces": "#191A1C"
+      }
+    ],
+    "sizes": [
+      {
+        "eu": 39,
+        "stock": 4
+      },
+      {
+        "eu": 40,
+        "stock": 7
+      },
+      {
+        "eu": 41,
+        "stock": 10
+      },
+      {
+        "eu": 42,
+        "stock": 9
+      },
+      {
+        "eu": 43,
+        "stock": 6
+      },
+      {
+        "eu": 44,
+        "stock": 3
+      },
+      {
+        "eu": 45,
+        "stock": 0
+      }
+    ]
+  },
+  {
+    "id": "zoom-vapor-pro",
+    "name": "Kineta Zoom Vapor Pro",
+    "category": "Running",
+    "tag": "Rocker Stack",
+    "stageTone": "sage",
+    "priceIdr": 2650000,
+    "summary": "Pelari jarak jauh bertumpuk busa rocker tinggi dengan bagian tumit meruncing dan Swoosh memanjang aerodinamis.",
+    "architecture": {
+      "silhouette": "vapor_run",
+      "collarHeight": 0.78,
+      "soleThickness": 1.24,
+      "lugDepth": 0.026,
+      "heelStackMm": 40,
+      "dropMm": 8,
+      "upperDefaultMaterial": "knit",
+      "airUnitStyle": "pod",
+      "cupsole": false,
+      "swooshScale": 1.28,
+      "dubrae": false
+    },
+    "materials": {
+      "upper": "Vaporweave mesh ultra-ringan dengan sistem tali asimetris",
+      "midsole": "Busa PEBA stack tinggi berprofil rocker dan ekor tumit aerodinamis",
+      "outsole": "Karet depan berdaya dorong tinggi untuk kecepatan jalan raya"
+    },
+    "colorways": [
+      {
+        "id": "ekiden-volt",
+        "name": "Ekiden Volt",
+        "upper": "#E8F0D8",
+        "overlay": "#222A1E",
+        "midsole": "#F7F8F3",
+        "outsole": "#1B2118",
+        "accent": "#D94E28",
+        "laces": "#1B2118"
+      },
+      {
+        "id": "proto-alabaster",
+        "name": "Proto Sail",
+        "upper": "#F3F0E8",
+        "overlay": "#272624",
+        "midsole": "#FAF8F2",
+        "outsole": "#191816",
+        "accent": "#E2532B",
+        "laces": "#F3F0E8"
+      },
+      {
+        "id": "midnight-cyber",
+        "name": "Midnight Teal",
+        "upper": "#1E262A",
+        "overlay": "#111619",
+        "midsole": "#ECEFE9",
+        "outsole": "#111619",
+        "accent": "#3FC4A7",
+        "laces": "#3FC4A7"
+      }
+    ],
+    "sizes": [
+      {
+        "eu": 39,
+        "stock": 5
+      },
+      {
+        "eu": 40,
+        "stock": 8
+      },
+      {
+        "eu": 41,
+        "stock": 11
+      },
+      {
+        "eu": 42,
+        "stock": 9
+      },
+      {
+        "eu": 43,
+        "stock": 6
+      },
+      {
+        "eu": 44,
+        "stock": 4
+      },
+      {
+        "eu": 45,
+        "stock": 2
+      }
+    ]
+  },
+  {
+    "id": "air-wave-97",
+    "name": "Kineta Air 97 Wave",
+    "category": "Air Cushion",
+    "tag": "Full-Length Air",
+    "stageTone": "lavender",
+    "priceIdr": 2550000,
+    "summary": "Terinspirasi kecepatan kereta peluru dengan garis gelombang paralel upper dan jendela Air Unit memanjang penuh.",
+    "architecture": {
+      "silhouette": "wave_97",
+      "collarHeight": 0.8,
+      "soleThickness": 1.12,
+      "lugDepth": 0.026,
+      "heelStackMm": 35,
+      "dropMm": 9,
+      "upperDefaultMaterial": "leather",
+      "airUnitStyle": "full",
+      "cupsole": false,
+      "swooshScale": 0.72,
+      "dubrae": false
+    },
+    "materials": {
+      "upper": "Upper berlapis garis gelombang reflektif dengan tali tersembunyi",
+      "midsole": "Bantalan Phylon dengan jendela Air transparan dari tumit hingga midfoot",
+      "outsole": "Karet padat berpola fleksi transversal"
+    },
+    "colorways": [
+      {
+        "id": "silver-bullet",
+        "name": "Silver Bullet",
+        "upper": "#C8CCD1",
+        "overlay": "#92979E",
+        "midsole": "#F4F5F6",
+        "outsole": "#1A1B1D",
+        "accent": "#D42A24",
+        "laces": "#C8CCD1"
+      },
+      {
+        "id": "gold-metallic",
+        "name": "Champagne Gold",
+        "upper": "#D5BE84",
+        "overlay": "#A68C4E",
+        "midsole": "#F5F1E6",
+        "outsole": "#1D1B17",
+        "accent": "#C93528",
+        "laces": "#D5BE84"
+      },
+      {
+        "id": "triple-slate",
+        "name": "Stealth Black",
+        "upper": "#27282A",
+        "overlay": "#17181A",
+        "midsole": "#1E1F22",
+        "outsole": "#101112",
+        "accent": "#A8EB70",
+        "laces": "#17181A"
+      }
+    ],
+    "sizes": [
+      {
+        "eu": 39,
+        "stock": 4
+      },
+      {
+        "eu": 40,
+        "stock": 6
+      },
+      {
+        "eu": 41,
+        "stock": 9
+      },
+      {
+        "eu": 42,
+        "stock": 8
+      },
+      {
+        "eu": 43,
+        "stock": 5
+      },
+      {
+        "eu": 44,
+        "stock": 3
+      },
+      {
+        "eu": 45,
+        "stock": 1
+      }
+    ]
+  },
+  {
+    "id": "react-infinity",
+    "name": "Kineta React Infinity",
+    "category": "Running",
+    "tag": "Flyknit Upper",
+    "stageTone": "sky",
+    "priceIdr": 2090000,
+    "summary": "Sepatu lari harian berrajutan mulus dengan klip stabilitas tumit lebar dan lekukan bantalan responsif.",
+    "architecture": {
+      "silhouette": "vapor_run",
+      "collarHeight": 0.8,
+      "soleThickness": 1.14,
+      "lugDepth": 0.028,
+      "heelStackMm": 36,
+      "dropMm": 8,
+      "upperDefaultMaterial": "knit",
+      "airUnitStyle": "heel",
+      "cupsole": false,
+      "swooshScale": 1.14,
+      "dubrae": false
+    },
+    "materials": {
+      "upper": "Rajutan Flyknit satu lembar yang mengikuti kontur kaki",
+      "midsole": "Busa lembut beralur energi dengan penstabil tumit TPU",
+      "outsole": "Karet berdaya tahan tinggi di zona benturan utama"
+    },
+    "colorways": [
+      {
+        "id": "terracotta-clay",
+        "name": "Terracotta Clay",
+        "upper": "#ECE7DD",
+        "overlay": "#C24E2D",
+        "midsole": "#F8F6F1",
+        "outsole": "#242220",
+        "accent": "#E2532B",
+        "laces": "#1E1D1B"
+      },
+      {
+        "id": "ocean-chalk",
+        "name": "Ocean & Chalk",
+        "upper": "#DFE8EC",
+        "overlay": "#2A5778",
+        "midsole": "#F5F7F8",
+        "outsole": "#1A252E",
+        "accent": "#E2532B",
+        "laces": "#2A5778"
+      },
+      {
+        "id": "olive-charcoal",
+        "name": "Olive Charcoal",
+        "upper": "#4E5B4C",
+        "overlay": "#2B302B",
+        "midsole": "#EAE6DC",
+        "outsole": "#1C1D1B",
+        "accent": "#A8EB70",
+        "laces": "#EAE6DC"
+      }
+    ],
+    "sizes": [
+      {
+        "eu": 39,
+        "stock": 7
+      },
+      {
+        "eu": 40,
+        "stock": 10
+      },
+      {
+        "eu": 41,
+        "stock": 13
+      },
+      {
+        "eu": 42,
+        "stock": 9
+      },
+      {
+        "eu": 43,
+        "stock": 6
+      },
+      {
+        "eu": 44,
+        "stock": 4
+      },
+      {
+        "eu": 45,
+        "stock": 2
+      }
+    ]
+  },
+  {
+    "id": "waffle-77-vintage",
+    "name": "Kineta Waffle 77 Vintage",
+    "category": "Lifestyle Retro",
+    "tag": "Heritage 77",
+    "stageTone": "amber",
+    "priceIdr": 1690000,
+    "summary": "Runner retro era 70-an bertubuh ramping dengan ujung suede lembut, midsole wedge tipis, dan sol gigi waffle.",
+    "architecture": {
+      "silhouette": "waffle_retro",
+      "collarHeight": 0.76,
+      "soleThickness": 0.82,
+      "lugDepth": 0.048,
+      "heelStackMm": 24,
+      "dropMm": 7,
+      "upperDefaultMaterial": "suede",
+      "airUnitStyle": "none",
+      "cupsole": false,
+      "swooshScale": 1.18,
+      "dubrae": false
+    },
+    "materials": {
+      "upper": "Perpaduan nilon ringan dan suede sikat pada ujung jari serta tumit",
+      "midsole": "Wedge EVA tipis bergaris warna kontras khas arsip tahun 77",
+      "outsole": "Outsole karet bergigi waffle menonjol hingga ke ujung jari"
+    },
+    "colorways": [
+      {
+        "id": "forrest-crimson",
+        "name": "Vintage Track",
+        "upper": "#EFECE4",
+        "overlay": "#B93728",
+        "midsole": "#F6F3EA",
+        "outsole": "#1E1D1B",
+        "accent": "#B93728",
+        "laces": "#EFECE4"
+      },
+      {
+        "id": "mustard-navy",
+        "name": "Saffron Navy",
+        "upper": "#DDA833",
+        "overlay": "#223352",
+        "midsole": "#F4EFE2",
+        "outsole": "#1A1D24",
+        "accent": "#223352",
+        "laces": "#F4EFE2"
+      },
+      {
+        "id": "sand-espresso",
+        "name": "Sand Espresso",
+        "upper": "#D5C6AE",
+        "overlay": "#594130",
+        "midsole": "#F2ECE0",
+        "outsole": "#231E1A",
+        "accent": "#594130",
+        "laces": "#F2ECE0"
+      }
+    ],
+    "sizes": [
+      {
+        "eu": 39,
+        "stock": 6
+      },
+      {
+        "eu": 40,
+        "stock": 8
+      },
+      {
+        "eu": 41,
+        "stock": 11
+      },
+      {
+        "eu": 42,
+        "stock": 8
+      },
+      {
+        "eu": 43,
+        "stock": 5
+      },
+      {
+        "eu": 44,
+        "stock": 3
+      },
+      {
+        "eu": 45,
+        "stock": 2
+      }
+    ]
+  },
+  {
+    "id": "blazer-mid-73",
+    "name": "Kineta Blazer Mid 73",
+    "category": "Lifestyle Retro",
+    "tag": "Mid-Cut Vulcanized",
+    "stageTone": "lavender",
+    "priceIdr": 1790000,
+    "summary": "Siluet mid-cut klasik berlidah busa terbuka, Swoosh jumbo melengkung tajam, dan sol vulkanisir datar.",
+    "architecture": {
+      "silhouette": "blazer_mid",
+      "collarHeight": 1.32,
+      "soleThickness": 0.86,
+      "lugDepth": 0.022,
+      "heelStackMm": 24,
+      "dropMm": 2,
+      "upperDefaultMaterial": "leather",
+      "airUnitStyle": "none",
+      "cupsole": true,
+      "swooshScale": 1.24,
+      "dubrae": false
+    },
+    "materials": {
+      "upper": "Kulit halus dipadu aksen suede samping di area mata kaki",
+      "midsole": "Autoclave vulkanisir yang menyatu rapat dengan upper",
+      "outsole": "Pola herringbone klasik berdaya cengkeram datar"
+    },
+    "colorways": [
+      {
+        "id": "sail-black",
+        "name": "Sail & Ink",
+        "upper": "#F3EFE4",
+        "overlay": "#DCD4C2",
+        "midsole": "#EFEAE0",
+        "outsole": "#D9D2C4",
+        "accent": "#181816",
+        "laces": "#F3EFE4"
+      },
+      {
+        "id": "habanero-red",
+        "name": "Habanero Red",
+        "upper": "#F4F2EC",
+        "overlay": "#D6CEC0",
+        "midsole": "#F2EFE7",
+        "outsole": "#DFD9CB",
+        "accent": "#C93322",
+        "laces": "#F4F2EC"
+      },
+      {
+        "id": "emerald-vintage",
+        "name": "Emerald 73",
+        "upper": "#F3F1EB",
+        "overlay": "#D4CCC0",
+        "midsole": "#EFECE3",
+        "outsole": "#DCD7CC",
+        "accent": "#246646",
+        "laces": "#F3F1EB"
+      }
+    ],
+    "sizes": [
+      {
+        "eu": 39,
+        "stock": 5
+      },
+      {
+        "eu": 40,
+        "stock": 9
+      },
+      {
+        "eu": 41,
+        "stock": 10
+      },
+      {
+        "eu": 42,
+        "stock": 7
+      },
+      {
+        "eu": 43,
+        "stock": 5
+      },
+      {
+        "eu": 44,
+        "stock": 4
+      },
+      {
+        "eu": 45,
+        "stock": 1
+      }
+    ]
+  },
+  {
+    "id": "terra-humara-acg",
+    "name": "Kineta Terra ACG",
+    "category": "Trail ACG",
+    "tag": "All-Terrain Lug",
+    "stageTone": "sage",
+    "priceIdr": 2390000,
+    "summary": "Sepatu jelajah segala medan dengan lug traksi dalam 5 mm, pelindung suede tebal, dan kapsul tumit tahan bentur.",
+    "architecture": {
+      "silhouette": "trail_acg",
+      "collarHeight": 1.14,
+      "soleThickness": 1.18,
+      "lugDepth": 0.082,
+      "heelStackMm": 38,
+      "dropMm": 6,
+      "upperDefaultMaterial": "suede",
+      "airUnitStyle": "heel",
+      "cupsole": false,
+      "swooshScale": 0.92,
+      "dubrae": false
+    },
+    "materials": {
+      "upper": "Ripstop tahan air berpadu mudguard suede sikat tahan abrasi",
+      "midsole": "Stack tinggi berprofil rocker dengan pelat batu fleksibel",
+      "outsole": "Lug karet multi-arah 5 mm untuk jalur basah dan berbatu"
+    },
+    "colorways": [
+      {
+        "id": "canyon-sand",
+        "name": "Canyon Sand",
+        "upper": "#C9B99F",
+        "overlay": "#6B4F3A",
+        "midsole": "#DFD7C8",
+        "outsole": "#23201D",
+        "accent": "#E2532B",
+        "laces": "#6B4F3A"
+      },
+      {
+        "id": "acg-purple-gold",
+        "name": "ACG Plum Gold",
+        "upper": "#4D3D5A",
+        "overlay": "#292330",
+        "midsole": "#D4A338",
+        "outsole": "#19171C",
+        "accent": "#E2532B",
+        "laces": "#D4A338"
+      },
+      {
+        "id": "pine-ash",
+        "name": "Pine & Ash",
+        "upper": "#3D4A3E",
+        "overlay": "#222622",
+        "midsole": "#B8B2A6",
+        "outsole": "#191B19",
+        "accent": "#A8EB70",
+        "laces": "#D68227"
+      }
+    ],
+    "sizes": [
+      {
+        "eu": 39,
+        "stock": 5
+      },
+      {
+        "eu": 40,
+        "stock": 8
+      },
+      {
+        "eu": 41,
+        "stock": 9
+      },
+      {
+        "eu": 42,
+        "stock": 7
+      },
+      {
+        "eu": 43,
+        "stock": 5
+      },
+      {
+        "eu": 44,
+        "stock": 4
+      },
+      {
+        "eu": 45,
+        "stock": 3
+      }
+    ]
+  }
+]
